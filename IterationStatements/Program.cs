@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
+using System.Reflection.Metadata;
 using System.Runtime.InteropServices;
 
 namespace IterationStatements
@@ -8,12 +10,70 @@ namespace IterationStatements
     {
         static void Main(string[] args)
         {
+
             // exercise 1
             // write this loop 15 time
-          for(int i = 0; i<15;i++)
+            for (int i = 0; i < 5; i++)
             {
                 Console.WriteLine($"{i}");
             }
+         /*   for (int i = 0; i < 5; i++) ;
+            {
+                Console.WriteLine($"{i}");
+            }
+            for (int i = 0; i < 5; i++)
+            {
+                Console.WriteLine($"{i}");
+            }
+            for (int i = 0; i < 5; i++)
+            {
+                Console.WriteLine($"{i}");
+            }
+            for (int i = 0; i < 5; i++)
+            {
+                Console.WriteLine($" {i}");
+            }
+            for (int i = 0; i < 5; i++)
+            {
+                Console.WriteLine($"{i} ");
+            }
+            for (int i = 0; i < 5; i++)
+            {
+                Console.WriteLine($"{i}");
+            }
+            for (int i = 0; i < 5; i++)
+            {
+                Console.WriteLine($"{i}");
+            }
+            for (int i = 0; i < 5; i++)
+            {
+                Console.WriteLine($"{i}");
+            }
+            for (int i = 0; i < 5; i++)
+            {
+                Console.WriteLine($"{i}");
+            }
+            for (int i = 0; i < 5; i++)
+            {
+                Console.WriteLine($"{i}");
+            }
+            for (int i = 0; i < 5; i++)
+            {
+                Console.WriteLine($"{i}");
+            }
+            for (int i = 0; i < 5; i++)
+            {
+                Console.WriteLine($"{i}");
+            }
+            for (int i = 0; i < 5; i++)
+            {
+                Console.WriteLine($"{i}");
+            }
+            for (int i = 0; i < 5; i++)
+            {
+                Console.WriteLine($"{i}");
+            } */
+
             //TODO - Read each comment and complete its instruction
             // like the example below
 
@@ -79,10 +139,81 @@ namespace IterationStatements
             for (int i = 199; i <= numbers.Count && i >= 0; i--)
             {
                 // place numbers[i] inside of the Console.WriteLine() method
-                Console.WriteLine( numbers[i]);
+                Console.WriteLine(numbers[i]);
             }
 
+
             //------------End of exercise
+            //exerice3 
+            //Write a method that will print to the console all numbers 1000 through -1000
+            for (int i = 1000; i >= -1000; i--)
+            {
+                Console.WriteLine(i);
+            }
+            //Write a method that will print to the console numbers 3 through 999 by 3 each time
+
+            for (int i = 3; i <= 999; i += 3)
+            {
+                Console.WriteLine(i);
+            }
+            //Write a method to accept two integers as parameterss and check whether they are equal or not
+            //Write a method to accept two integers as parameterss and check whether they are equal or not
+            int x = 0; int y = 0;
+            Console.WriteLine("enter first number ");
+            x = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("enter number 2");
+            y = Convert.ToInt32(Console.ReadLine());
+            if (x == y)
+            {
+                Console.WriteLine("same numbers");
+
+            }
+            else
+            {
+                Console.WriteLine("not the same");
+            }
+            //Write a method to check whether a given number is even or odd  
+            Console.WriteLine("enter number");
+            int a = Convert.ToInt32(Console.ReadLine());
+            if (a % 2 == 0)
+            {
+                Console.WriteLine("even");
+            }
+            else { Console.WriteLine("odd"); }
+            //Write a method to check whether a given number is positive or negative  
+            int r = 0;
+            Console.WriteLine("enter r");
+            r = Convert.ToInt32(Console.ReadLine());
+            if (r >= 0)
+            {
+                Console.WriteLine("positive");
+            }
+            else { Console.WriteLine("negative"); }
+            //Write a method to read the age of a candidate and determine whether they can vote. 
+            Console.WriteLine("what is your age");
+            int age = Convert.ToInt32(Console.ReadLine()); 
+            if(age >18)
+            {
+                Console.WriteLine("you are eligible to vote");
+            } 
+            else { Console.WriteLine("you are too young"); }
         }
+
     }
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+    //Write a method to read the age of a candidate and determine whether they can vote.
+
 }
