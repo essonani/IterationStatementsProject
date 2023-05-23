@@ -197,6 +197,26 @@ namespace IterationStatements
                 Console.WriteLine("you are eligible to vote");
             } 
             else { Console.WriteLine("you are too young"); }
+
+            
+            //Write a method to display the multiplication table(from 1 to 12) of a given integer
+            int s, nub;
+            Console.WriteLine("enter a number in the table");
+            nub = Convert.ToInt32(Console.ReadLine());
+            for (s =1; s <= 12; s++)
+            {
+                Console.WriteLine(s * nub);
+            }
+            // Write a method to check if an integer(from the user) is in the range -10 to 10 
+            int k = -10; int f = 10; int v;
+            Console.WriteLine("enter a number");
+            v = Convert.ToInt32(Console.ReadLine());
+            if (v >= k && v<=f ) 
+            {
+                Console.WriteLine("it is in range");
+            } 
+            
+            else { Console.WriteLine("it is not in range"); }
         }
 
     }
