@@ -182,7 +182,7 @@ namespace IterationStatements
             else { Console.WriteLine("odd"); }
             //Write a method to check whether a given number is positive or negative  
             int r = 0;
-            Console.WriteLine("enter r");
+            Console.WriteLine("enter a number");
             r = Convert.ToInt32(Console.ReadLine());
             if (r >= 0)
             {
